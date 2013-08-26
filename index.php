@@ -98,13 +98,13 @@ $app_name = idx($app_info, 'name', '');
     <!-- over facebook.  You should fill these tags in with      -->
     <!-- your data.  To learn more about Open Graph, visit       -->
     <!-- 'https://developers.facebook.com/docs/opengraph/'       -->
-    <meta property="og:title" content="<?php echo he($app_name); ?>" />
+    <meta property="og:title" content="Luke's Programs" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="<?php echo AppInfo::getUrl(); ?>" />
+    <meta property="og:url" content="http://apps.facebook.com/luke_program/" />
     <meta property="og:image" content="<?php echo AppInfo::getUrl('/logo.png'); ?>" />
     <meta property="og:site_name" content="<?php echo he($app_name); ?>" />
-    <meta property="og:description" content="My first app" />
-    <meta property="fb:app_id" content="<?php echo AppInfo::appID(); ?>" />
+    <meta property="og:description" content="The place to get all my programs" />
+    <meta property="fb:app_id" content="399559203479647" />
 
     <script type="text/javascript" src="/javascript/jquery-1.7.1.min.js"></script>
 
@@ -243,7 +243,7 @@ $app_name = idx($app_info, 'name', '');
       <?php } else { ?>
       <div>
         <h1>Welcome</h1>
-        <div class="fb-login-button" data-scope="user_likes,user_photos"></div>
+        <div class="fb-login-button"></div>
       </div>
       <?php } ?>
     </header>
