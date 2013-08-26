@@ -275,7 +275,9 @@ $app_name = idx($app_info, 'name', '');
             </a>
 </center>
           </li>
+<div style='align:right'>
 <H1><a href="http://s3.amazonaws.com/heroku_pages/maintance.html">View my programs</a></h1>
+</div>
           <?php
             }
           ?>
