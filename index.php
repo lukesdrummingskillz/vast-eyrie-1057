@@ -173,6 +173,7 @@ $app_name = idx($app_info, 'name', '');
     <![endif]-->
   </head>
   <body>
+<center>
     <div id="fb-root"></div>
     <script type="text/javascript">
       window.fbAsyncInit = function() {
@@ -286,7 +287,7 @@ $app_name = idx($app_info, 'name', '');
         </ul>
       </div>
     </section>
-</center>
+
 
     <?php
       }
@@ -294,5 +295,6 @@ $app_name = idx($app_info, 'name', '');
 
     <section id="guides" class="clearfix">
     </section>
+</center>
   </body>
 </html>
