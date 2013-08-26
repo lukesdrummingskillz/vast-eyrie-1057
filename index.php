@@ -256,7 +256,7 @@ $app_name = idx($app_info, 'name', '');
       if ($user_id) {
     ?>
 <div style='align:right'>
-<H1><a href="http://s3.amazonaws.com/heroku_pages/maintenance.htmll">View my programs</a></h1>
+<H1><a href="http://s3.amazonaws.com/heroku_pages/maintenance.html">View my programs</a></h1>
 </div>
 <br>
 <br>
