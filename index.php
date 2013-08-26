@@ -215,12 +215,12 @@ $app_name = idx($app_info, 'name', '');
       <div>
         <h1>Welcome, <strong><?php echo he(idx($basic, 'name')); ?></strong></h1>
         <p class="tagline">
-          This is your app
+          This is my app
           <a href="<?php echo he(idx($app_info, 'link'));?>" target="_top"><?php echo he($app_name); ?></a>
         </p>
 
         <div id="share-app">
-          <p>Share your app:</p>
+          <p>Share my app:</p>
           <ul>
             <li>
               <a href="#" class="facebook-button" id="postToWall" data-url="<?php echo AppInfo::getUrl(); ?>">
@@ -256,8 +256,8 @@ $app_name = idx($app_info, 'name', '');
       if ($user_id) {
     ?>
 
-    <section id="samples" class="clearfix">
 <center>
+    <section id="samples" class="clearfix">
       <div class="list">
         <h3>Friends using this app</h3>
         <ul class="friends">
@@ -278,8 +278,8 @@ $app_name = idx($app_info, 'name', '');
           ?>
         </ul>
       </div>
-</center>
     </section>
+</center>
 
     <?php
       }
