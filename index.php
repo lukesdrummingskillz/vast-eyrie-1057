@@ -241,7 +241,7 @@ FB.logout(function(response) {
               </a>
             </li>
             <li>
-              <a href="#" class="facebook-button apprequests" id="sendRequest" data-message="Check out this awesome software!">
+              <a href="javascript:void(0)" class="facebook-button apprequests" id="sendRequest" data-message="Check out this awesome software!">
                 <span class="apprequests">Send Requests</span>
               </a>
             </li>
