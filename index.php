@@ -322,7 +322,7 @@ FB.logout(function(response) {
 <!--
 	var currentDate = new Date()
 	var year = currentDate.getFullYear()
-	document.write("<nobr><b> Copyright © Luke Taylor " + year + "</b><p><a href='javascript:void(0)' onClick='leave()'>Logout</a></p></nobr>")
+	document.write("<center><b> Copyright © Luke Taylor " + year + "</b><p><a href='javascript:void(0)' onClick='leave()'>Logout</a></p></center>")
 //-->
 </script>
 <?php
@@ -332,7 +332,7 @@ FB.logout(function(response) {
 <!--
 	var currentDate = new Date()
 	var year = currentDate.getFullYear()
-	document.write("<nobr><b> Copyright © Luke Taylor " + year + "</b>")
+	document.write("<center><b> Copyright © Luke Taylor " + year + "</b></center>")
 //-->
 </script>
 <?php
