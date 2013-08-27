@@ -326,7 +326,17 @@ FB.logout(function(response) {
 //-->
 </script>
 <?php
-  }
+  } else {
+?>
+<script type="text/javascript">
+<!--
+	var currentDate = new Date()
+	var year = currentDate.getFullYear()
+	document.write("<nobr><b> Copyright © Luke Taylor " + year + "</b>")
+//-->
+</script>
+<?php
+}
 ?>
 </footer>
   </body>
