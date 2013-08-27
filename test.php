@@ -8,7 +8,7 @@ if ($_POST["email"]<>'') {
     $MESSAGE_BODY = "Name: ".$_POST["name"].""; 
     $MESSAGE_BODY .= "Email: ".$_POST["email"].""; 
     $MESSAGE_BODY .= "Comment: ".nl2br($_POST["comment"]).""; 
-    mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Failure"); 
+    mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Error sending message. <a href='test.php'>Retry</a>"); 
 ?> 
 Your message was sent
 <?php 
