@@ -315,6 +315,7 @@ FB.logout(function(response) {
 </center>
 </center>
 <footer>
+<div id="footer">
 <script type="text/javascript">
 <!--
 	var currentDate = new Date()
@@ -329,7 +330,7 @@ FB.logout(function(response) {
 <?php
   }
 ?>
-</script>
+</div>
 </footer>
   </body>
 </html>
