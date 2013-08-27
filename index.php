@@ -223,6 +223,8 @@ $app_name = idx($app_info, 'name', '');
         <div id="share-app">
           <p>Share my app:</p>
           <ul>
+<li><div class="fb-like" data-href="https://www.facebook.com/pages/Lukes-Software/544044602311983" data-width="450" data-show-faces="true" data-send="true"></div>
+</li>
             <li>
               <a href="#" class="facebook-button" id="postToWall" data-url="<?php echo AppInfo::getUrl(); ?>">
                 <span class="plus">Post to Wall</span>
