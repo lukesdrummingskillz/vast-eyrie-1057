@@ -55,6 +55,15 @@ FB.api(
     description: 'The classic arcade game remade for Windows. Also contains a level editor.'
   },
   function(response) {
+         if (!response) {
+           alert('Error occurred.');
+         } else if (response.error) {
+           document.getElementById('result').innerHTML = 'Error: ' + response.error.message;
+         } else {
+           document.getElementById('result').innerHTML =
+             '<a href=\"https://www.facebook.com/me/activity/' + response.id + '\">' +
+             'Story created.  ID is ' + response.id + '</a>';
+         }
     // handle the response
   }
 );
@@ -65,6 +74,7 @@ FB.api(
 <center>
 <h1><a href="https://docs.google.com/file/d/0B2uIButg-hogYjEzSU4yeFJ2d2c/edit?usp=sharing" target="_blank">Download</h1></a>
 <h1><a href="javascript:void(0)"  onClick="share()">Share with friends</a></h1>
+<p id="result"></p>
 <br>
 <h2><a href="index.php">Go Home</a></h2>
 </center>
