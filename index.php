@@ -318,21 +318,24 @@ FB.logout(function(response) {
  <?php
       if ($user_id) {
     ?>
+<center><b> Copyright ©  <a href="http://www.facebook.com/Lukesdrummingskillz" target="_blank"> Luke Taylor</a>
 <script type="text/javascript">
 <!--
 	var currentDate = new Date()
 	var year = currentDate.getFullYear()
-	document.write("<center><b> Copyright © Luke Taylor " + year + "</b><p><a href='javascript:void(0)' onClick='leave()'>Logout</a></p></center>")
+	document.write(year + "")
 //-->
 </script>
+</b><p><a href='javascript:void(0)' onClick='leave()'>Logout</a></p></center>
 <?php
   } else {
 ?>
+<center><b> Copyright © <a href="http://www.facebook.com/Lukesdrummingskillz" target="_blank"> Luke Taylor</a>
 <script type="text/javascript">
 <!--
 	var currentDate = new Date()
 	var year = currentDate.getFullYear()
-	document.write("<center><b> Copyright © <a href="http://www.facebook.com/Lukesdrummingskillz" target="_blank"> Luke Taylor</a> " + year + "</b></center>")
+	document.write(year + "</b></center>")
 //-->
 </script>
 <?php
