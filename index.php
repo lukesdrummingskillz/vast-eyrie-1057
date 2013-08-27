@@ -321,7 +321,13 @@ FB.logout(function(response) {
 	var year = currentDate.getFullYear()
 	document.write("<b> Copyright © Luke Taylor " + year + "</b>")
 //-->
+ <?php
+      if ($user_id) {
+    ?>
 <p><a href="javascript:void(0)" onClick="leave()">Logout</a></p>
+<?php
+  }
+?>
 </script>
 </footer>
   </body>
