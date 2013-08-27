@@ -288,10 +288,17 @@ $app_name = idx($app_info, 'name', '');
 
 
     <?php
-      }
+      } else {
     ?>
 
-    <section id="guides" class="clearfix">
+<section id="noauth" class="clearfix">
+<h1>You must authenticate this app to view my software.</h1>
+</section>
+<?php
+}
+?>
+
+   <section id="guides" class="clearfix">
     </section>
 </center>
   </body>
