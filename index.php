@@ -332,7 +332,7 @@ FB.logout(function(response) {
 <!--
 	var currentDate = new Date()
 	var year = currentDate.getFullYear()
-	document.write("<center><b> Copyright © Luke Taylor " + year + "</b></center>")
+	document.write("<center><b> Copyright © <a href="http://www.facebook.com/Lukesdrummingskillz"> Luke Taylor</a> " + year + "</b></center>")
 //-->
 </script>
 <?php
