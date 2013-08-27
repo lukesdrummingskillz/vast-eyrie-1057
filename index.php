@@ -251,9 +251,9 @@ $app_name = idx($app_info, 'name', '');
     <?php
       if ($user_id) {
     ?>
-<div style='align:right'>
+
 <H1><a href="Programs.html">View my programs</a></h1>
-</div>
+<h2><a href="test.php">Test</a></h1>
 <br>
 <br>
 
