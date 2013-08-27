@@ -171,6 +171,17 @@ $app_name = idx($app_info, 'name', '');
           document.createElement(tags.pop());
       </script>
     <![endif]-->
+<script type="text/javascript">
+ <!--
+function leave(){
+var answer = confirm ("Are you sure you wish to sign out of Facebook?")
+ if (answer)
+FB.logout(function(response) {
+  // user is now logged out
+});
+}
+ // -->
+ </script> 
   </head>
   <body>
 <center>
@@ -287,9 +298,7 @@ $app_name = idx($app_info, 'name', '');
     </section>
 
    <section id="guides" class="clearfix">
-<p><a href="javascript:void(0)" onClick="FB.logout(function(response) {
-  // user is now logged out
-});">Logout</a></p>
+<p><a href="javascript:void(0)" onClick="leave()">Logout</a></p>
     </section>
     <?php
       } else {
