@@ -41,13 +41,11 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
 <title>Pacman</title>
-</head>
-<body>
-<center>
-<h1><a href="https://docs.google.com/file/d/0B2uIButg-hogYjEzSU4yeFJ2d2c/edit?usp=sharing" target="_blank">Download</h1></a>
-<h1><a href="javascript:void(0)"  onClick="FB.api(
-  'me/objects/luke_program:program',
-  'post',
+<script>
+Function share() {
+FB.api( 
+'me/objects/luke_program:program',
+'post',
   {
     app_id: 399559203479647,
     type: 'luke_program:program',
@@ -59,7 +57,14 @@
   function(response) {
     // handle the response
   }
-);">Share with friends</a></h1>
+);
+}
+</script>
+</head>
+<body>
+<center>
+<h1><a href="https://docs.google.com/file/d/0B2uIButg-hogYjEzSU4yeFJ2d2c/edit?usp=sharing" target="_blank">Download</h1></a>
+<h1><a href="javascript:void(0)"  onClick="share()">Share with friends</a></h1>
 <br>
 <h2><a href="index.php">Go Home</a></h2>
 </center>
