@@ -103,7 +103,7 @@ $app_name = idx($app_info, 'name', '');
     <meta property="og:url" content="http://apps.facebook.com/luke_program/" />
     <meta property="og:image" content="<?php echo AppInfo::getUrl('/logo.png'); ?>" />
     <meta property="og:site_name" content="<?php echo he($app_name); ?>" />
-    <meta property="og:description" content="The place to get all my programs" />
+    <meta property="og:description" content="The place to get all my software" />
     <meta property="fb:app_id" content="399559203479647" />
 
     <script type="text/javascript" src="/javascript/jquery-1.7.1.min.js"></script>
@@ -245,15 +245,16 @@ $app_name = idx($app_info, 'name', '');
     </header>
 
     <section id="get-started">
-      <p>Welcome to my app,where you can download all my programs!!</p>
+      <p>Welcome to my app,where you can download all my software!!</p>
     </section>
 
     <?php
       if ($user_id) {
     ?>
-
+<div style='align:right'>
 <H1><a href="Programs.html">View my programs</a></h1>
-<h2><a href="test.php">Test</a></h1>
+<h2><a href="test.php">Suggest an idea for some software or improvements</a></h2>
+</div>
 <br>
 <br>
 

@@ -8,7 +8,7 @@ if ($_POST["email"]<>'') {
     $MESSAGE_BODY = "Name: ".$_POST["name"].""; 
     $MESSAGE_BODY .= "Email: ".$_POST["email"].""; 
     $MESSAGE_BODY .= "Comment: ".nl2br($_POST["comment"]).""; 
-    mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Error sending message. <a href='test.php'>Retry</a>"); 
+    mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Error sending message. <a href='test.php'>Retry</a> or <a href='index.php'>Go Home</a>"); 
 ?> 
 Your message was sent
 <?php 
@@ -28,7 +28,7 @@ Your message was sent
 <td><input name="email" type="text" id="email" size="32"></td>
 </tr>
 <tr>
-<td class="bodytext">Comment:</td>
+<td class="bodytext">Suggestion:</td>
 <td><textarea name="comment" cols="45" rows="6" id="comment" class="bodytext"></textarea></td>
 </tr>
 <tr>
