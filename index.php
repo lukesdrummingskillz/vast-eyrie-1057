@@ -314,5 +314,14 @@ FB.logout(function(response) {
 
 
 </center>
+<footer>
+<script type="text/javascript">
+<!--
+	var currentDate = new Date()
+	var year = currentDate.getFullYear()
+	document.write("<b> Copyright © Luke Taylor " + year + "</b>")
+//-->
+</script>
+</footer>
   </body>
 </html>
