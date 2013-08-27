@@ -253,7 +253,7 @@ $app_name = idx($app_info, 'name', '');
     ?>
 <div style='align:right'>
 <H1><a href="Programs.html">View my programs</a></h1>
-<h2><a href="test.php">Suggest an idea for some software or improvements</a></h2>
+<h2><a href="feedback_form.html">Suggest an idea for some software or improvements</a></h2>
 </div>
 <br>
 <br>
