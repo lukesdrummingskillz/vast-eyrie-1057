@@ -299,7 +299,6 @@ FB.logout(function(response) {
     </section>
 
    <section id="guides" class="clearfix">
-<p><a href="javascript:void(0)" onClick="leave()">Logout</a></p>
     </section>
     <?php
       } else {
@@ -314,6 +313,7 @@ FB.logout(function(response) {
 
 
 </center>
+</center>
 <footer>
 <script type="text/javascript">
 <!--
@@ -321,6 +321,7 @@ FB.logout(function(response) {
 	var year = currentDate.getFullYear()
 	document.write("<b> Copyright © Luke Taylor " + year + "</b>")
 //-->
+<p><a href="javascript:void(0)" onClick="leave()">Logout</a></p>
 </script>
 </footer>
   </body>

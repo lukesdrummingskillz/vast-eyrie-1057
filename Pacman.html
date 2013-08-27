@@ -43,33 +43,11 @@
 <title>Pacman</title>
 </head>
 <body>
-<script type="text/javascript">
-FB.getLoginStatus(function(response) {
-  if (response.status === 'connected') {
-    // the user is logged in and has authenticated your
-    // app, and response.authResponse supplies
-    // the user's ID, a valid access token, a signed
-    // request, and the time the access token 
-    // and signed request each expire
-    var uid = response.authResponse.userID;
-    var accessToken = response.authResponse.accessToken;
-  } else if (response.status === 'not_authorized') {
-    // the user is logged in to Facebook, 
-    // but has not authenticated your app
-Alert('You must authorise the app');
-window.location="index.php";
-  } else {
-    // the user isn't logged in to Facebook.
-Alert('You must be logged into Facebook');
-window.location="index.php";
-  }
- });
-</script>
 <center>
 <h1><B>Pacman</b></h1>
-<p>A remake of the classic arcade game, made for Windows. The game comes with a level 
+<p>A remake of the classic arcade game, made for Windows. The game comes with a level editor so you can design your own levels.</p>
+<br />
 <h1><a href="https://docs.google.com/file/d/0B2uIButg-hogYjEzSU4yeFJ2d2c/edit?usp=sharing" target="_blank">Download</h1></a>
-<p id="result"></p>
 <br>
 <h2><a href="index.php">Go Home</a></h2>
 </center>
