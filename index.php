@@ -266,6 +266,7 @@ FB.logout(function(response) {
 <sction id="content" class="clearfix">
 <div style='align:right'>
 <H1><a href="Programs.html">View my programs</a></h1>
+<h1><a href="Apps.html">View my apps</a></h1>
 <h2><a href="feedback_form.html">Suggest an idea for some software or improvements</a></h2>
 </div>
 <br>
