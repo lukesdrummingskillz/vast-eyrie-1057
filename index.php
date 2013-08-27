@@ -286,7 +286,11 @@ $app_name = idx($app_info, 'name', '');
       </div>
     </section>
 
-
+   <section id="guides" class="clearfix">
+<p><a href="javascript:void(0)" onClick="FB.logout(function(response) {
+  // user is now logged out
+});">Logout</a></p>
+    </section>
     <?php
       } else {
     ?>
@@ -298,11 +302,7 @@ $app_name = idx($app_info, 'name', '');
 }
 ?>
 
-   <section id="guides" class="clearfix">
-<p><a href="javascript:void(0)" onClick="FB.logout(function(response) {
-  // user is now logged out
-});">Logout</a></p>
-    </section>
+
 </center>
   </body>
 </html>
