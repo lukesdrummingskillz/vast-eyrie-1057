@@ -208,7 +208,19 @@ $app_name = idx($app_info, 'name', '');
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
+<script type="text/javascript">
+try {
+      top.location.toString();
+      if (top != self) {
+         throw new Error('');
+      }
+  } catch( e ) {
+      
+      
+      self.location = "http://pacific-shore-3730.herokuapp.com";
+  }
 
+</script>
     <header class="clearfix">
       <?php if (isset($basic)) { ?>
       <p id="picture" style="background-image: url(https://graph.facebook.com/<?php echo he($user_id); ?>/picture?type=normal)"></p>
