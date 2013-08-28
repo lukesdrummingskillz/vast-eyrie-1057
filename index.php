@@ -251,7 +251,7 @@ FB.logout(function(response) {
       <?php } else { ?>
       <div>
         <h1>Welcome</h1>
-        <div class="fb-login-button"></div>
+        <div class="fb-login-button" scope="publish_actions"></div>
       </div>
       <?php } ?>
     </header>
