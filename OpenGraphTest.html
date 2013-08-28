@@ -38,8 +38,17 @@
 
 <!-- Sample Action -->
 
-<button onclick="FB.api('me/luke_program:download', 'post',
-{'program':'http://shrouded-wildwood-2738.herokuapp.com/'});Alert('Yes you did');">
+<button onclick="FB.api(
+  'me/luke_program:download',
+  'post',
+  {
+    program: "http://samples.ogp.me/399897496779151"
+  },
+  function(response) {
+    // handle the response
+  }
+);
+;Alert('Yes you did');">
 I downloaded Pacman
 </button>
 
