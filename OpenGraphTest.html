@@ -1,0 +1,41 @@
+<html>
+<body>
+<!-- Load Facebook JS SDK -->
+
+<div id="fb-root">
+</div>
+
+<script>
+(function(d, s, id) {
+
+var js, fjs = d.getElementsByTagName(s)[0];
+
+if (d.getElementById(id)) return;
+
+js = d.createElement(s);
+ js.id = id;
+
+js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=399559203479647";
+
+fjs.parentNode.insertBefore(js, fjs);
+
+}
+(document, 'script', 'facebook-jssdk'))
+;</script>
+
+<!-- Add to Timeline -->
+
+<div class="fb-add-to-timeline" data-show-faces="true" >
+</div>
+
+
+<!-- Sample Action -->
+
+<button onclick="FB.api('me/luke_program:download', 'post',
+{'program':'http://pacific-shore-3730.herokuapp.com/FBPacman.html'});">
+I downloaded Pacman
+</button>
+
+
+</body>
+</html>
