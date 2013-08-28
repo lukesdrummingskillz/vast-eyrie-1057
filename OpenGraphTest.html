@@ -5,23 +5,30 @@
 <div id="fb-root">
 </div>
 
+
+<div id="fb-root"></div>
 <script>
-(function(d, s, id) {
+  window.fbAsyncInit = function() {
+    // init the FB JS SDK
+    FB.init({
+      appId      : '399559203479647',                        // App ID from the app dashboard
+      channelUrl : '//pacific-shore-3730.herokuapp.COM/channel.html', // Channel file for x-domain comms
+      status     : true,                                 // Check Facebook Login status
+      xfbml      : true                                  // Look for social plugins on the page
+    });
 
-var js, fjs = d.getElementsByTagName(s)[0];
+    // Additional initialization code such as adding Event Listeners goes here
+  };
 
-if (d.getElementById(id)) return;
-
-js = d.createElement(s);
- js.id = id;
-
-js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=399559203479647";
-
-fjs.parentNode.insertBefore(js, fjs);
-
-}
-(document, 'script', 'facebook-jssdk'))
-;</script>
+  // Load the SDK asynchronously
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 
 <!-- Add to Timeline -->
 
