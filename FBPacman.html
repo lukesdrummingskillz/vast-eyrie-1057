@@ -1,16 +1,67 @@
 <!DOCTYPE html
+
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# luke_program: http://ogp.me/ns/fb/luke_program#">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# luke_program: http://ogp.me/ns/fb/luke_program#"
+>
 <!-- Open Graph Meta tags -->
+
 <meta property="og:type" content="luke_program:program" />
+
 <meta property="og:url" content="http://pacific-shore-3730.herokuapp.com/" />
+
 <meta property="og:title" content="Pacman" />
+
 <meta property="og:description" content="A remake of the classic arcade game, made for Windows. The game comes with a level editor so you can design your own levels" />
+
 <meta property="og:image" content="http:/pacific-shore-3730.herokuapp.com/images/Pacman.jpg" />
+
 <meta property="og:locale" content="en_GB" />
+
 <meta property="og:site_name" content="Luke's Software" />
+
 <meta property="fb:app_id" content="399559203479647" />
+
 <head/>
-<body></body>
+
+<body>
+<!-- Load Facebook JS SDK -->
+
+<div id="fb-root">
+</div>
+
+<script>
+(function(d, s, id) {
+
+var js, fjs = d.getElementsByTagName(s)[0];
+
+if (d.getElementById(id)) return;
+
+js = d.createElement(s);
+ js.id = id;
+
+js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=399559203479647";
+
+fjs.parentNode.insertBefore(js, fjs);
+
+}
+(document, 'script', 'facebook-jssdk'))
+;</script>
+
+<!-- Add to Timeline -->
+
+<div class="fb-add-to-timeline" data-show-faces="true" >
+</div>
+
+
+<!-- Sample Action -->
+
+<button onclick="FB.api('me/luke_program:download', 'post',
+{'program':'http://pacific-shore-3730.herokuapp.com/FBPacman.html'});">
+I downloaded Pacman
+</button>
+
+
+</body>
 </html>
 
