@@ -38,12 +38,16 @@
 
 <!-- Sample Action -->
 
-<button onclick="Alert('Yes you did');
-FB.api(
-  'me/luke_program:download',
+<button onclick="FB.api(
+  'me/objects/luke_program:program',
   'post',
   {
-    program: "http://samples.ogp.me/399897496779151"
+    app_id: 399559203479647,
+    type: 'luke_program:program',
+    url: 'http://samples.ogp.me/399897496779151',
+    title: 'Sample Program',
+    image: 'https://fbstatic-a.akamaihd.net/images/devsite/attachment_blank.png',
+    description: ''
   },
   function(response) {
     // handle the response
